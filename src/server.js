@@ -2,9 +2,9 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 
-// Created a local database called test-database-affiliate
+// Default mongodb is called test
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/test-database-affiliate');
+mongoose.connect('mongodb://mongodb:27017/test');
 var Bear = require('./app/models/bear');
 
 app.use(bodyParser.urlencoded({ extended: true }));
